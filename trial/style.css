@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 200vh;
+}
+
+/* .landing {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+} */
+
+section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+section .side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url(Xibit\ Official\ Transparent\ Logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+section .side#side1 {
+    clip-path: polygon(0 0, 100% 0%, 0% 99%);
+}
+
+section .side#side2 {
+    clip-path: polygon(100% 100%, 100% 0%, 0% 99%);
+}
+
+.content {
+    background: #000;
+    color: #fff;
+    padding: 100px;
+    padding-top: 150vh;
+}
